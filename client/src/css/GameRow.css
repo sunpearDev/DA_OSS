@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400&display=swap');
+
+.row{
+    display:grid;
+    grid-template-columns:25% 25% 25% 25%;
+}
+.title{
+    color:white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+}
+@media (max-width:1380px){
+    .row{
+        grid-template-columns:25% 25% 25% 25%;
+    }
+}
+@media (max-width:1200px){
+    .row{
+        grid-template-columns:33,33% 33,33% 33,33%s;
+    }
+}
+
+@media (max-width:950px){
+    .row{
+        grid-template-columns:50% 50%;
+    }
+}
+@media (max-width:580px){
+    .row{
+        grid-template-columns:100%;
+    }
+}

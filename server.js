@@ -23,6 +23,15 @@ connection.once("open", () => {
   console.log("MongoDB database connection established successfully");
 });
 
+const GameRouter = require("./routers/game");
+const TypeGameRouter = require("./routers/gameType");
+
+const LibraryRouter=require("./routers/library")
+
+
+app.use("/games", GameRouter);
+app.use("/types", TypeGameRouter);
+app.use("/librarys", LibraryRouter);
 
 
 if (process.env.NODE_ENV=='production'){
