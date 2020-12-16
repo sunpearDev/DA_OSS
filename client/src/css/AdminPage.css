@@ -1,0 +1,32 @@
+.AdminPage .row{
+    display:grid;
+    grid-template-columns: 20% 80%;
+    color: #DDDDDD;
+}
+.AdminPage .row > div:first-child{
+    
+    background:  #0162c8;
+    border:1px solid #0162c8;
+    border-radius:10px;
+}
+.AdminPage .row > div:first-child div:first-child{
+    font-size:20px;
+    font-weight:bold;
+}
+.AdminPage .row > div:first-child hr{
+    width: 100%;
+}
+.AdminPage .row > div:last-child{
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    box-sizing: border-box;
+    margin:0 30px;
+}
+.AdminPage .row > div:last-child >*{
+    margin-bottom: 15px;
+}
+.AdminPage a.active, .AdminPage a.actived{
+    box-sizing: border-box!important;
+    margin:0 15px 10px 15px;
+    line-height:45px;
+}
