@@ -1,0 +1,70 @@
+.Footer {
+  padding: 30px 80px;
+  background: black;
+  color: #ccc;
+  z-index: 0;
+  margin-top: 40px;
+}
+.Footer a {
+  cursor: pointer;
+}
+.top_footer {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin-bottom: 20px;
+}
+.top_footer > div {
+  display: flex;
+  flex-direction: column;
+}
+.top_footer h4 {
+  margin: 0 0 8px 0;
+}
+
+#branch_name {
+  width: 100px;
+}
+.footer_legal {
+  display: flex;
+  justify-content: space-between;
+}
+#small_logo {
+  width: 40px;
+  height: 40px;
+}
+.footer_legal .footer_copyright {
+  line-height: 45px;
+}
+@media (max-width: 780px) {
+  .top_footer {
+    grid-template-columns: 50% 50%;
+  }
+  .top_footer > div {
+    margin-bottom: 10px;
+  }
+  .footer_legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .Footer {
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  .top_footer {
+    grid-template-columns: 100%;
+  }
+  .top_footer > div {
+    margin-top: 25px;
+    text-align: center;
+  }
+  .footer_legal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+}

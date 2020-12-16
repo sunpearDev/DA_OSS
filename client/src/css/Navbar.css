@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+nav {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #24252a;
+  padding: 30px 10px;
+  height: 10px;
+}
+.logo {
+  cursor: pointer;
+  width: 65px;
+  height: 60px;
+  margin-left: 10px;
+}
+nav li,
+nav a,
+nav button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500px;
+  font-size: 16px;
+  color: #ecf0f1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.nav_links {
+  list-style: none;
+}
+.nav_links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav_links a:hover,
+.reponsive_nav_links a:hover {
+  color: #0888a9;
+  border-bottom: 1px solid white;
+}
+.reponsive_nav_links {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  top: 44px;
+  right: 0;
+  background-color: black;
+  width: 100vw;
+  height: auto;
+  border: 1px solid black;
+  line-height: 65px;
+  transition: all 0.5s;
+}
+.reponsive_nav_links li {
+  height: 10vh;
+  text-align: center;
+  vertical-align: middle;
+  transform: rotate(30);
+}
+.btn {
+  padding: 9px 25px;
+  background-color: rgb(0, 130, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  ransition: all 0.3 ease 0s;
+  margin: 0 5px;
+}
+.btn:hover {
+  background-color: rgb(0, 130, 169, 0.8);
+}
+.burger {
+  display: none;
+}
+.reg_signin_zone {
+  display: flex;
+  flex-direction:row;
+}
+.reg_signin_zone > *{
+  margin:0 5px;
+}
+.reg_signin_zone .Account {
+  border:1px solid rgb(0, 130, 169, 1);
+  border-radius: 10px;
+  box-sizing: padding-box;
+  padding:3px 5px;
+  cursor: pointer;
+}
+. .Account:hover {
+  background:rgb(0, 130, 169, 1);
+  color:black;
+}
+.Account {
+  color:white;
+} 
+
+@media (max-width: 960px) {
+  body {
+    overflow-x: hidden;
+  }
+  .burger {
+    display: block;
+    border: 1px solid white;
+    padding: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px;
+    align-items: center;
+  }
+  .nav_links {
+    display: none;
+  }
+  .reponsive_nav_links{
+    display: none;
+  }
+  .reg_signin_zone{
+    display: none;
+  }
+  .burger:hover {
+    background: white;
+  }
+  .burger:hover i{
+    color: black;
+  }
+}
