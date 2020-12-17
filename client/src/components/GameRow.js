@@ -10,12 +10,12 @@ export default class GameRow extends Component {
     this.state = { Games: [] };
   }
   componentDidMount() {
-    /*axios
+    axios
     .get("https://amadas.herokuapp.com/games/")
     .then((res) => {
       this.setState({ Games: res.data });
     })
-    .catch((err) => console.log(err));*/
+    .catch((err) => console.log(err));
   }
 
   render() {
