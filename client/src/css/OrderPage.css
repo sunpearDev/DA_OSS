@@ -1,0 +1,72 @@
+.OrderPage {
+    color:#CCCCCC; 
+}
+.OrderPage h2{
+    font-family: 'Noto Sans', sans-serif;
+    color:#DDDDDD;
+}
+.OrderPage .row{
+    display:grid;
+    grid-template-columns: 40% 10% 40%;
+}
+.OrderPage .row1{
+    display:grid;
+    grid-template-columns: 50% 50%!important;
+}
+.OrderPage .row >*{
+    width: 100%;
+}
+.OrderPage .row:nth-child(3) img{
+    width: 150px;
+    height: 150px;
+}
+.OrderPage .row1 img{
+    width: 100%;
+    height: auto;
+}
+.OrderPage .row,.OrderPage .row1> div:nth-child(2n){
+    text-align: center;
+}
+.OrderPage .note{
+    height: 100px;
+    line-height:100px;
+    text-align:center;
+}
+.OrderPage a{
+    box-sizing:padding;
+    -moz-box-sizing: padding-box;
+    -webkit-box-sizing: padding-box;
+    
+    font-family: "Noto Sans KR", sans-serif;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    background: rgb(18, 18, 18);
+    text-align: center;
+    transition: all 0.2s;
+    border: 2px solid rgb(203, 57, 42);
+    cursor: pointer;
+    width: 100%;
+    height: 45px;
+    line-height: 42px;
+    font-weight: bold;
+}
+.OrderPage a:hover{
+    background: rgb(203, 57, 42);
+}
+@media (max-width:580px){
+    .OrderPage .row{
+        display:grid;
+        grid-template-columns: 40% 10% 40%;
+    }
+}
+@media (max-width:800px){
+    .OrderPage .intro{
+        display:grid;
+        grid-template-columns: 100%;
+    }
+}
