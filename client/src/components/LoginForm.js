@@ -32,8 +32,8 @@ export default class LoginForm extends Component {
       password: this.state.password
     }
 
-    let result = await axios.post("https://amadas.herokuapp.com/accounts/login/", user).then()
-      .catch(err => alert("Login failed.\n" + err))
+    /*let result = await axios.post("https://amadas.herokuapp.com/accounts/login/", user).then()
+      .catch(err => alert("Login failed.\n" + err))*/
 
     if (result.data[0]) {
       let library = await axios.get("https://amadas.herokuapp.com/librarys/" + result.data[0]._id).then()
