@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+.gameDetailPage {
+    color:#CCCCCC;    
+}
+
+.gameDetailPage h2{
+    font-family: 'Noto Sans', sans-serif;
+    color:#DDDDDD;
+}
+.carousel div:first-child{
+   height: 500px;
+}
+.carousel div iframe{
+    width:100%;
+    height:100%;
+}
+.carousel .thumbs-wrapper{
+    height: 160px!important;
+}
+.carousel img{
+    height: 100%;
+    width: auto;
+}
+
+.gameDetailPage h2:last-child{
+    font-size:18px;
+    font-weight:normal;
+}
+
+.intro{
+    display:grid;
+    grid-template-columns: 70% 30%;
+    margin-bottom: 30px;
+}
+.about{
+    display:grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 30px;
+}
+.infor{
+    display:grid;
+    grid-template-columns:33.34% 33.34% auto;
+}
+.infor > div{
+    margin:5px 0;
+}
+#title{
+    font-family: "Noto Sans JP", sans-serif;
+    font-size:24px;
+    font-weight: bold;
+}
+.buy_zones{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+}
+.buy_zones a,.buy_zones .download, .AdminPage a.active{
+    box-sizing:padding;
+    -moz-box-sizing: padding-box;
+    -webkit-box-sizing: padding-box;
+    margin:0 60px;
+    font-family: "Noto Sans KR", sans-serif;
+    position: relative;
+    display: inline-block;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    background: rgb(18, 18, 18);
+    text-align: center;
+    transition: all 0.2s;
+    border: 2px solid rgb(203, 57, 42);
+    cursor: pointer;
+    height: 45px;
+    line-height: 42px;
+    font-weight: bold;
+}
+
+.buy_zones a:hover,.buy_zones .download:hover,  .AdminPage a.active:hover{
+    background: rgb(203, 57, 42);
+}
+.buy_zones button .dropdown{
+    display:none;
+    flex-direction: column;
+    z-index: 1;
+    background:black;
+}
+.buy_zones button:hover .dropdown{
+    display:flex;
+}
+.dropdown a{
+    text-decoration: none;
+    margin-top:10px;
+
+}
+.specifications_zone{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    margin-top:20px;
+}
+.specifications_zone > div{
+    display:flex;
+    flex-direction:column;
+    background:rgb(28, 28, 28);
+    border:1px solid rgb(28, 28, 28);
+    border-radius:10px;
+    margin:0 10px;
+    padding:5px 10px;
+}
+.specifications_zone > div b{
+    margin-bottom:10px;
+}
+.specifications_zone > div div:nth-child(2n){
+    color:#AAAAAA;
+    font-weight: bold;
+}
+.specifications_zone > div div:nth-child(2n+1){
+    color:#DDDDDD;
+    margin-bottom: 15px;
+}
+@media (max-width:928px){
+    .intro{
+        grid-template-columns: 60% 40%;
+    }
+}
+@media (max-width:620px){
+    .intro{
+        grid-template-columns:100%;
+    }
+    .intro >*{
+        margin:5px 0;
+    }
+}
+@media (max-width:880px){
+    .about:last-child{
+        grid-template-columns:100%;
+    }
+}
+@media (max-width:630px){
+    .specifications_zone{
+        grid-template-columns:100%;
+    }
+    .specifications_zone > div{
+        margin:10px 0;
+    }
+}
+
+
