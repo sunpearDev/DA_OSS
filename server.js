@@ -25,9 +25,7 @@ connection.once("open", () => {
 
 const GameRouter = require("./routers/game");
 const TypeGameRouter = require("./routers/gameType");
-
-const LibraryRouter=require("./routers/library")
-
+const LibraryRouter=require("./routers/library");
 
 app.use("/games", GameRouter);
 app.use("/types", TypeGameRouter);
