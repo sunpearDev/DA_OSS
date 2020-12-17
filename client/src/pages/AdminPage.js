@@ -15,9 +15,9 @@ export default class AdminPage extends Component {
         if (!sessionStorage || !sessionStorage.getItem("admin_right")) {
             window.location = "/"
         }
-        /*axios.get("https://amadas.herokuapp.com/orders/").then(
+       axios.get("https://amadas.herokuapp.com/orders/").then(
             response => this.setState({ orders: response.data })
-        )*/
+        )
     }
     showAnnouce() {
         alert("Order is actived.")
