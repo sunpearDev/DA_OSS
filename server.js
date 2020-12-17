@@ -25,14 +25,14 @@ connection.once("open", () => {
 const GameRouter = require("./routers/game");
 const TypeGameRouter = require("./routers/gameType");
 const AccountRouter = require("./routers/account");
-const LibraryRouter=require("./routers/library")
+const LibraryRouter = require("./routers/library")
 const OrderRouter = require("./routers/order")
 
 app.use("/games", GameRouter);
 app.use("/types", TypeGameRouter);
 app.use("/accounts", AccountRouter);
 app.use("/librarys", LibraryRouter);
-app.use("/orders",OrderRouter)
+app.use("/orders", OrderRouter)
 
 
 
@@ -42,7 +42,7 @@ if (process.env.NODE_ENV == 'production') {
     app.get("*", (req, res) => {
         res.sendFile(path.join(__dirname, "client", "build", "index.html"));
     });
-}
+};
 
 app.listen(port, () => {
     console.log("Server is running on port: " + port);
