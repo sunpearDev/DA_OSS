@@ -25,20 +25,16 @@ connection.once("open", () => {
 const GameRouter = require("./routers/game");
 const TypeGameRouter = require("./routers/gameType");
 const LibraryRouter=require("./routers/library");
-
-app.use("/games", GameRouter);
-app.use("/types", TypeGameRouter);
-app.use("/librarys", LibraryRouter);
-
-const GameRouter = require("./routers/game.js");
-const TypeGameRouter = require("./routers/gameType");
-const LibraryRouter = require("./routers/library")
+const AccountRouter = require("./routers/account");
 const OrderRouter = require("./routers/order")
 
 app.use("/games", GameRouter);
 app.use("/types", TypeGameRouter);
+app.use("/accounts", AccountRouter);
 app.use("/librarys", LibraryRouter);
-app.use("/orders", OrderRouter)
+app.use("/orders",OrderRouter)
+
+
 
 if (process.env.NODE_ENV == 'production') {
     //set static frontend
