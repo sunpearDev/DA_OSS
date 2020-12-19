@@ -16,14 +16,14 @@ export default class AdminPage extends Component {
             window.location = "/"
         }
         axios.get("https://amadas.herokuapp.com/orders/").then(
-            response => this.setState({ orders: response.data })
+            response => this.setState({orders: response.data})
         )
     }
     showAnnouce() {
         alert("Order is actived.")
     }
-    activeOrder(order) {
-        axios.put("https://amadas.herokuapp.com/orders/" + order._id).then(res => {
+    async activeOrder(order) {
+        await axios.put("https://amadas.herokuapp.com/orders/" + order._id).then(res => {
             if (!res.data) {
                 alert("Order active successfully.")
             }

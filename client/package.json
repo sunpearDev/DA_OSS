@@ -15,6 +15,7 @@
     "react-scripts": "^4.0.0",
     "react-select": "^3.1.1"
   },
+  "typings": "vscode.d.ts",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

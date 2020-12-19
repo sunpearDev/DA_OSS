@@ -29,4 +29,60 @@
     box-sizing: border-box!important;
     margin:0 15px 10px 15px;
     line-height:45px;
+    cursor: pointer;
 }
+.AdminPage .active{
+    box-sizing:padding;
+    -moz-box-sizing: padding-box;
+    -webkit-box-sizing: padding-box;
+    margin:0 60px;
+    font-family: "Noto Sans KR", sans-serif;
+    position: relative;
+    display: inline-block;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    background: rgb(18, 18, 18);
+    text-align: center;
+    transition: all 0.2s;
+    border: 2px solid rgb(203, 57, 42);
+    cursor: pointer;
+    height: 45px;
+    line-height: 42px;
+    font-weight: bold;
+}
+
+.AdminPage a.active:hover{
+    background: rgb(203, 57, 42);
+}
+.AdminPage .actived {
+    box-sizing: padding-box;
+    -moz-box-sizing: padding-box;
+    -webkit-box-sizing: padding-box;
+    margin: 20px 60px 0 60px;
+    height: 50px;
+    cursor: pointer;
+    font-family: "Noto Sans KR", sans-serif;
+    position: relative;
+    display: inline-block;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    background: rgb(18, 18, 18);
+    text-align: center;
+    transition: all 0.2s;
+    border: 3px solid #0162c8;
+  }
+.AdminPage a.actived:hover {
+    cursor: pointer;
+    background: #0162c8;
+    border: none;
+    color: black;
+    font-weight: bold;
+  }
