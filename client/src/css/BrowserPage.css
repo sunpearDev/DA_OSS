@@ -1,0 +1,62 @@
+.BrowserPage{
+    display:grid;
+    grid-template-columns: 80% 20%;
+    color:#DDDDDD;
+}
+.BrowserPage a{
+    margin:10px 20px 10px 20px;
+    cursor: pointer;
+}
+.BrowserPage .row{
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+.BrowserPage .GameCard{
+    padding:5px 60px 0 60px!important;
+    margin:0!important;
+
+}
+.BrowserPage > div:last-child{
+    display:flex;
+    flex-direction:column;
+}
+.BrowserPage > div:last-child hr{
+    width:100%;
+}
+.BrowserPage > div:last-child div{
+    text-decoration: none;
+    margin:10px 0;
+    color:#CCCCCC;
+    cursor: pointer;
+}
+.BrowserPage > div:last-child div:active{
+    text-decoration:underline;
+}
+#combo{
+    width:100px!important;
+    height: 30px;
+  
+    margin-bottom: 20px;
+    font-size:16px;
+    border:1 solid rgb(18, 18, 18);
+    border-radius:10px;
+}
+#combo *{
+    border:1 solid rgb(18, 18, 18);
+    border-radius: 10px;
+}
+@media (max-width:980px){
+    .BrowserPage .row{  
+        grid-template-columns: 100%;
+        
+    }
+    .BrowserPage .GameCard{
+        padding:5px 100px 0 100px!important;
+    }
+}
+@media (max-width:680px){
+    .BrowserPage .GameCard{
+        padding:5px 30px 0 30px!important;
+       
+    }
+}
