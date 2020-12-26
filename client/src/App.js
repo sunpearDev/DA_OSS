@@ -14,6 +14,7 @@ import LibraryPage from "./pages/LibraryPage";
 
 import AdminPage from "./pages/AdminPage";
 import Footer from "./components/Footer";
+import LoginPage from "./pages/LoginPage";
 
 
 function App() {
@@ -27,8 +28,10 @@ function App() {
          
           <Route path = "/order/:id" component = { OrderPage } />
           <Route path = "/game/:id" component = { GameDetailPage } />
-
+			
           <Route path="/admin" component={AdminPage} />
+	<Route path="/login" component={LoginPage} />
+ 	
       </div>
       <Footer />
     </BrowserRouter>

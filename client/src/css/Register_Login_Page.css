@@ -1,0 +1,8 @@
+#RegisterPage,
+#LoginPage {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  color: #eeeeee;
+  flex-direction: column;
+}

@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap");
+#RegisterForm,
+#LoginForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 450px;
+  justify-content: space-around;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+}
+#RegisterForm input,
+#LoginForm input {
+  margin: 5px 0;
+  border: 1px solid rgb(18, 18, 18);
+  border-radius: 8px;
+  height: 32px;
+}
+#RegisterForm button,
+#LoginForm button,.AdminPage a.actived {
+  box-sizing: padding-box;
+  -moz-box-sizing: padding-box;
+  -webkit-box-sizing: padding-box;
+  margin: 20px 60px 0 60px;
+  height: 50px;
+  cursor: pointer;
+  font-family: "Noto Sans KR", sans-serif;
+  position: relative;
+  display: inline-block;
+  line-height: 30px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  background: rgb(18, 18, 18);
+  text-align: center;
+  transition: all 0.2s;
+  border: 3px solid #0162c8;
+}
+#RegisterForm button:hover,
+#LoginForm button:hover,.AdminPage a.actived:hover {
+  cursor: pointer;
+  background: #0162c8;
+  border: none;
+  color: black;
+  font-weight: bold;
+}
+@media (max-width:450px){
+  .OrderPage .row{
+      width: 240px;
+  }
+}
