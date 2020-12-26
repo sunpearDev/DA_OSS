@@ -6,7 +6,7 @@ export default class AdminPage extends Component {
     constructor(props) {
         super(props)
         this.showAnnouce = this.showAnnouce.bind(this)
-        
+        this.activeOrder = this.activeOrder.bind(this)
         this.state = {
             orders: []
         }
@@ -22,7 +22,17 @@ export default class AdminPage extends Component {
     showAnnouce() {
         alert("Order is actived.")
     }
-   
+    async activeOrder(order) {
+        await axios.put("https://amadas.herokuapp.com/orders/" + order._id).then(res => {
+            if (!res.data) {
+                alert("Order active successfully.")
+            }
+            else
+                alert("Order false.")
+            window.location.reload()
+        })
+        .catch(err => { alert("Order fail\n" + err + "\n") })
+    }
     render() {
         return (
             <div className="AdminPage">
@@ -43,7 +53,7 @@ export default class AdminPage extends Component {
                             <div>{order.game.name}</div>
                             <div>{order.game.price} $</div>
                             <div>{order.date_contact}</div>
-                            {order.status === true ? (<a className="actived" onClick={this.showAnnouce}>Actived</a>) : (<a className="active" >Active</a>)}
+                            {order.status === true ? (<a className="actived" onClick={this.showAnnouce}>Actived</a>) : (<a className="active" onClick={()=>this.activeOrder(order)}>Active</a>)}
                         </>))) :
                             ('')}
 
